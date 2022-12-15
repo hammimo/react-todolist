@@ -8,7 +8,7 @@ export default function Todo({todo, onUpdate, onDelete}) {
         onUpdate({...todo, status});
     }
     const handleDelete = () => onDelete(todo);
-    return <li>
+    return (<li>
         <input 
             type='checkbox' 
             id='checkbox' 
@@ -19,6 +19,6 @@ export default function Todo({todo, onUpdate, onDelete}) {
         <button onClick={handleDelete}>
             <HiTrash/>
         </button>
-    </li>;
+    </li>);
 }
 

@@ -12,13 +12,13 @@ export default function AddTodo({onAdd}) {
         onAdd({id: uuidv4(), text, status: 'active'});
         setText('');
     }
-    return <form onSubmit={handleSubmit}>
+    return (<form onSubmit={handleSubmit}>
         <input 
         type='text' 
         placeholder='Add Todo'
         value={text} 
         onChange={handleChange}/>
         <button>Add</button>
-    </form>;
+    </form>);
 }
 

@@ -10,6 +10,7 @@
     font-size: 1.1rem;
     padding: 0.2rem ;
     border: none;
+    outline: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
